@@ -10,7 +10,7 @@ public class Polynomial {
 	 * Constructs a Polynomial with no terms yet.
 	 */
 	public Polynomial() {
-		//FIXME
+	LinkedList<String> poly = new LinkedList<String>();
 	}
 
 	
@@ -19,8 +19,11 @@ public class Polynomial {
 	 * @param coeff
 	 * @return polynomial with added term
 	 */
-	public void addTerm(double coeff) {
-		//FIXME
+	public String addTerm(double coeff) {
+		list.add(coeff);
+		int exp = list.size();
+		String nextTerm = coeff + "x^" + exp;
+		return poly + nextTerm;
 	}
 	
 	/*
