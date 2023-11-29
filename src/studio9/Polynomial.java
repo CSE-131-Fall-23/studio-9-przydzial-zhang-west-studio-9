@@ -10,7 +10,7 @@ public class Polynomial {
 	 * Constructs a Polynomial with no terms yet.
 	 */
 	public Polynomial() {
-	LinkedList<String> poly = new LinkedList<String>();
+	this.list = new LinkedList<>();
 	}
 
 	
